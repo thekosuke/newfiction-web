@@ -1,0 +1,91 @@
+@media all and (min-width: 280px) {
+	/*//////////////////////////////////////////////////////
+	  GRID
+	//////////////////////////////////////////////////////*/	
+	.grid-1, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+
+	/*//////////////////////////////////////////////////////
+	  TYPESETTING
+	//////////////////////////////////////////////////////*/
+	h1, p, a, li { 
+		font-size: 0.75rem;		
+		line-height: 1rem;
+		letter-spacing: 0.02rem;
+	}
+
+	.intro .textEN {
+		font-size: 1rem;
+		line-height: 1.25rem;
+	}
+
+	.intro .textJP { line-height: 1.25rem; }
+
+	/*//////////////////////////////////////////////////////
+	  CONTENT
+	//////////////////////////////////////////////////////*/	
+	#links { margin: 1rem; }
+	.linkWrapper { display: block; }
+	.linkWrapper p { display: inline; }
+
+	.intro { margin: 1.75rem 1rem; }
+	.intro .textEN { margin-bottom: .5rem; }
+
+	svg { display: block; width: 107%; }
+
+	/*//////////////////////////////////////////////////////
+	  FOOTER
+	//////////////////////////////////////////////////////*/
+	#footer { padding: 1rem; }
+	#footer div { margin: .1rem 0;}
+	#footer .serviceWrapper { margin-bottom: 1.5rem; }
+	#footer .service { margin-bottom: .5rem; }
+	#footer .col { vertical-align: middle; }
+	#footer .col .circles { display: inline-block; }
+	#footer .col p { display: inline-block; }
+	
+	.service h1, .service li { margin-right: .15rem; }	
+}
+
+@media all and (min-width: 768px) {
+	.grid-2 { grid-template-columns: 3fr 3fr 2fr; }
+
+	#links { margin: 2.5rem; }
+	.intro { margin: 2.5rem 2.5rem; }
+	#footer { padding: 1.5rem 2.5rem; }
+
+	#footer div { margin: 0; }
+	#footer .service { margin-bottom: 0; }
+	.service h1, .service li, #footer .col p { font-size: 0.6875rem; }
+}
+
+@media all and (min-width: 1024px) {	
+	h1, p, a, li { 
+		font-size: 0.875rem;
+	}
+	
+	#links { margin: 4rem; }
+	.intro { margin: 2.5rem 4rem; }
+	#footer { padding: 1.5rem 4rem; }
+}
+
+@media all and (min-width: 1280px) {
+	.grid-1 { grid-template-columns: 1fr 1fr; }
+	#footer .grid-1 { grid-template-columns: 6fr 2fr; }
+	.grid-2 { grid-template-columns: 1fr 1fr; }
+
+	#footer .serviceWrapper { margin-bottom: 0; }
+	
+	#footer .col { 
+		display: grid;
+		align-items: end;
+		text-align: right; 
+	}
+}
+
+@media all and (min-width: 1440px) {
+	
+}
+
+@media all and (min-width: 1680px) {
+	
+}

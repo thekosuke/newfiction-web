@@ -1,0 +1,168 @@
+/*//////////////////////////////////////////////////////
+  ROOT
+//////////////////////////////////////////////////////*/
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+:root {
+  --black: #3D2F30;
+  --white: #FAF5F5;
+  --red: #D82B24;
+  --redMid: #E06C76;
+  --redLight: #FAC0BE;
+  --body: #3D3B3B;
+  --bodyLight: #666262;
+}
+
+::-webkit-selection { background-color: var(--black); color: var(--white); }
+  ::-moz-selection { background-color: var(--black); color: var(--white); }
+    ::-ms-selection { background-color: var(--black); color: var(--white); }
+      ::-o-selection { background-color: var(--black); color: var(--white); }
+        ::selection { background-color: var(--black); color: var(--white); }
+
+/*//////////////////////////////////////////////////////
+  SETTINGS
+//////////////////////////////////////////////////////*/
+html,body,div,li,h1,p,a {
+    margin: 0;    
+    padding: 0;
+
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;    
+    
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+   html { 
+    scroll-behavior: smooth;    
+  }
+
+  body {  
+    position: relative;
+    background: var(--white);
+    font-family: Helvetica, sans-serif;
+
+    animation: land 3s;
+    animation-timing-function: cubic-bezier(0.08,0.82,0.17,1);    
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+  
+  #content {
+    display: grid;
+    align-content: center;
+    box-sizing: border-box;
+  }
+      
+
+/*//////////////////////////////////////////////////////
+  ELEMENTS
+//////////////////////////////////////////////////////*/
+.logo {
+  display: grid;
+  place-items: center;
+}
+
+svg path, #footer {
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.service h1, .service li { display: inline; }
+
+/*//////////////////////////////////////////////////////
+  TYPESETTING
+//////////////////////////////////////////////////////*/
+h1, p, a, li {
+  font-family: "InterVariable";
+  font-weight: 300;
+}
+
+p { color: var(--red); }
+a { 
+  color: var(--red); 
+  text-decoration: none; 
+  font-weight: 400; 
+}
+a:hover { text-decoration: underline; }
+
+.intro .textEN { 
+  color: var(--red); 
+  font-weight: 400; 
+}
+
+#footer { background-color: var(--red); }
+#footer .service h1 { 
+  color: var(--white); 
+  font-weight: 400; 
+}
+#footer li, #footer p { 
+  color: var(--redLight); 
+  list-style: none; 
+}
+
+/*//////////////////////////////////////////////////////
+  TRANSITION
+//////////////////////////////////////////////////////*/
+@keyframes land {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes land {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@-moz-keyframes land {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@-ms-keyframes land {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@-o-keyframes land {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

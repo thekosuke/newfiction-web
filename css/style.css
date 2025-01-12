@@ -44,7 +44,9 @@ html,body,div,li,h1,p,a {
   }
 
    html { 
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;  
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;  
   }
 
   body {  
@@ -58,7 +60,9 @@ html,body,div,li,h1,p,a {
 
   html, body {
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
   
   #container {

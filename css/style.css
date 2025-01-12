@@ -70,13 +70,20 @@ html,body,div,li,h1,p,a {
     grid-template-rows: auto 1fr auto;
     height: 100vh;
   }
+
+  #links { grid-row: 1; }
   
   #content {
     display: grid;
     align-content: center;
     box-sizing: border-box;
+    grid-row: 2;
   }
       
+  #footer { 
+    grid-row: 3; 
+    background-color: var(--red);
+  }
 
 /*//////////////////////////////////////////////////////
   ELEMENTS
@@ -117,7 +124,6 @@ a:hover { text-decoration: underline; }
   font-weight: 400; 
 }
 
-#footer { background-color: var(--red); }
 #footer .service h1 { 
   color: var(--white); 
   font-weight: 400; 

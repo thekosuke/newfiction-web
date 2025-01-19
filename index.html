@@ -137,6 +137,27 @@
       $('#footer .service h1').css('color', '');
       $('#footer li, #footer p').css('color', '');
     });
+
+    $('.linkWrapper a.linkedin').hover(function() {
+      $('body').css('background', 'var(--red)');
+      $('svg path').css('fill', 'var(--white)');
+      $('p').css('color', 'var(--redLight)');
+      $('a').css('color', 'var(--white)');
+      $('.intro .textEN').css('color', 'var(--white)');
+      $('#footer').css('background-color', 'var(--white)');
+      $('#footer .service h1').css('color', 'var(--red)');
+      $('#footer li, #footer p').css('color', 'var(--redMid)');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('body').css('background', '');
+      $('svg path').css('fill', '');
+      $('p').css('color', '');
+      $('a').css('color', '');
+      $('.intro .textEN').css('color', '');
+      $('#footer').css('background-color', '');
+      $('#footer .service h1').css('color', '');
+      $('#footer li, #footer p').css('color', '');
+    });
   });
 </script>
 

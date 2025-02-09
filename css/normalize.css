@@ -72,7 +72,7 @@
 	/*//////////////////////////////////////////////////////
 	  WORK
 	//////////////////////////////////////////////////////*/
-	#work { margin: 4rem 0; }
+	#work { margin: 3rem 0; }
 	.projectWrapper { margin-bottom: 2.5rem; }
 	
 	.projectThumbnail {
@@ -232,8 +232,8 @@
 	//////////////////////////////////////////////////////*/
 	#about { 
 		display: block; 
-		top: 7.1rem;
-		margin: 0 1rem 0 0;		
+		top: 6.1rem;
+		margin: 0 1rem 4rem 0;		
 	}
 
 	.aboutSection { margin-bottom: 1.5rem; }

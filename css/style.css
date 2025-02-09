@@ -1,34 +1,23 @@
 /*//////////////////////////////////////////////////////
-  ROOT
+  SETTINGS
 //////////////////////////////////////////////////////*/
-:root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1;
-}
-@supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
-}
-
 :root {
   --black: #3D2F30;
   --white: #FAF7F8;
   --red: #D82B24;
-  --redMid: #E06C76;
   --redLight: #FAC0BE;
-  --body: #3D3B3B;
-  --bodyLight: #666262;
+  --body: #454547;
+  --gray: #8F8C8C;
 }
 
-::-webkit-selection { background-color: var(--black); color: var(--white); }
-  ::-moz-selection { background-color: var(--black); color: var(--white); }
-    ::-ms-selection { background-color: var(--black); color: var(--white); }
-      ::-o-selection { background-color: var(--black); color: var(--white); }
-        ::selection { background-color: var(--black); color: var(--white); }
+/* HIGHLIGHT */
+::-webkit-selection { background-color: var(--red); color: var(--white); }
+  ::-moz-selection { background-color: var(--red); color: var(--white); }
+    ::-ms-selection { background-color: var(--red); color: var(--white); }
+      ::-o-selection { background-color: var(--red); color: var(--white); }
+        ::selection { background-color: var(--red); color: var(--white); }
 
-/*//////////////////////////////////////////////////////
-  SETTINGS
-//////////////////////////////////////////////////////*/
-html,body,div,li,h1,p,a {
+html,body,div,li,h1,h2,h3,h4,p,a {
     margin: 0;    
     padding: 0;
 
@@ -53,47 +42,42 @@ html,body,div,li,h1,p,a {
     position: relative;
     background: var(--white);
     font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
 
     animation: land 3s;
     animation-timing-function: cubic-bezier(0.08,0.82,0.17,1);    
   }
 
   html, body {
-    height: 100%;
-    overflow-x: hidden;
+    height: 100%;    
     overflow-y: auto;
     overscroll-behavior: contain;
   }
-  
+
   #container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
+    position: relative;
+    display: block;
+    width: 100%;  
+    transform: translateY(0);
+    transition: transform 600ms ease;
+    z-index: 0;
   }
 
-  #links { grid-row: 1; }
-  
-  #content {
-    display: grid;
-    align-content: center;
-    box-sizing: border-box;
-    grid-row: 2;
-  }
-      
+  #header { z-index: 1; }
+
   #footer { 
-    grid-row: 3; 
+    grid-row: 5; 
     background-color: var(--red);
   }
 
 /*//////////////////////////////////////////////////////
   ELEMENTS
 //////////////////////////////////////////////////////*/
-.logo {
-  display: grid;
-  place-items: center;
+body {
+  border-top: var(--red) solid .5rem;
 }
 
-svg path, #footer {
+svg path, .accordion, #footer {
   -webkit-transition: .3s ease-in-out;
   -moz-transition: .3s ease-in-out;
   -ms-transition: .3s ease-in-out;
@@ -101,36 +85,130 @@ svg path, #footer {
   transition: .3s ease-in-out;
 }
 
-.service h1, .service li { display: inline; }
-
 /*//////////////////////////////////////////////////////
   TYPESETTING
 //////////////////////////////////////////////////////*/
-h1, p, a, li {
-  font-family: "InterVariable";
+h1, h2, h3, h4, .accordion p, .serviceColumn p, #nav .intro p, #nav .service p.title  { 
+  font-family: "Selecta Regular"; 
   font-weight: 300;
 }
 
-p { color: var(--red); }
-a { 
-  color: var(--red); 
-  text-decoration: none; 
-  font-weight: 400; 
-}
-a:hover { text-decoration: underline; }
-
-.intro .textEN { 
-  color: var(--red); 
-  font-weight: 400; 
+p, a, p a, li { 
+  font-family: "Selecta Light";   
 }
 
-#footer .service h1 { 
+/* FORMATTING */
+h1, h3 { text-transform: uppercase; }
+li { list-style: none; }
+a { text-decoration: none; }
+a:hover { cursor: pointer; text-decoration: line-through; }
+
+/* JP TEXT */
+.aboutSection.JP h4 { font-family: "IBMPlexSansJP Medium"; }
+.aboutSection.JP p, .aboutSection.JP p a, span.JP, #nav .service p.description.textJP { font-family: "IBMPlexSansJP Regular"; }
+
+/* COLORS */
+h2, h4 {
+  color: var(--black); 
+}
+
+#nav h1, #nav p, #nav p a { 
   color: var(--white); 
-  font-weight: 400; 
 }
-#footer li, #footer p { 
+
+h1, .aboutSection p a, .aboutSection.JP p a { 
+  color: var(--red); 
+}
+
+#work .projectTag { 
+  text-transform: uppercase; 
+  color: var(--gray); 
+}
+
+#work .projectDescription, .aboutSection p, .aboutSection li { 
+  color: var(--body); 
+}
+
+#footer li, #footer p, #footer p a, #nav .service p.description.textJP { 
   color: var(--redLight); 
-  list-style: none; 
+}
+
+/*//////////////////////////////////////////////////////
+  WORK
+//////////////////////////////////////////////////////*/
+.accordion { cursor: pointer; }
+
+.accordion p {
+  display: inline-block;
+  color: var(--red); 
+}
+
+.accordion:hover > p {
+  text-decoration: line-through;
+}
+
+.projectDescription {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.projectThumbnail {
+  max-width: 100%;
+  cursor: url(../img/arrow.svg) 24 24, e-resize;
+}
+
+.projectThumbnail img {
+  max-width: 100%;
+}
+
+.projectSlide { 
+  display: none; 
+  max-width: 100%;
+}
+
+/*//////////////////////////////////////////////////////
+  ABOUT
+//////////////////////////////////////////////////////*/
+#content { overflow: visible; }
+#about {
+  position: sticky;
+  position: -webkit-sticky;  
+  z-index: 0;
+  height: auto;
+  align-self: start;
+}
+
+/*//////////////////////////////////////////////////////
+  MENU
+//////////////////////////////////////////////////////*/
+#menu { display: none; }
+
+#menu:checked ~ #nav {
+  top: 0;
+  transition: top 600ms ease;
+}
+
+#menu:checked ~ #container {
+  transform: translateY(80vh);
+  transition: transform 600ms ease;
+}
+
+.menu { transform: translateY(0); }
+.menu:hover > h1 { cursor: pointer; text-decoration: line-through; }
+
+#nav {
+  position: fixed;
+  top: -80vh;
+  right: 0;
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  border-bottom: var(--red) solid .5rem;
+  background-color: var(--red);
+  transition: top 600ms ease;
+  z-index: 2;
 }
 
 /*//////////////////////////////////////////////////////

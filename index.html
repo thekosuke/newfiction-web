@@ -31,64 +31,451 @@
 
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" type="image/png" sizes="150x150" href="img/favicon.png" />
-  
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
   <link rel="stylesheet" href="css/style.css">  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/fonts.css">
 
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/script.js"></script>
   
 </head>
 
-<body>
+<body>  
 
-  <div id="container">    
+  <input type="checkbox" id="menu"/> 
+  
+  <nav id="nav">
+    <div class="connect grid-4">
+      <div><p>Email: <a href="mailto:kosuke@newfiction.org">business@newfiction.org</a></p></div>
+      <div><p>Connect on <a href="https://www.linkedin.com/company/newfiction-org/" target="_blank">LinkedIn</a></p></div>
+      <div class="credit"><p>Work by <a href="https://thekosuke.com/" target="_blank">Kosuke Futsukaichi</a></p></div>
+    </div>
+
+    <div class="intro">
+      <p>
+        We are a design studio based in Tokyo, working globally—playing in the intersection of digital product and brand design.        
+      </p>
+    </div>
+
+    <div class="service grid-5">
+      <div class="serviceType">
+        <h1>-1 → 0</h1>
+        <p class="title">Strategizing <br>What to Make</p>
+        <p class="description">Conducting and synthesizing research to build a strategic foundation.</p>
+        <p class="description textJP">インサイトを整理し、<br>戦略の基盤を築きます。</p>
+      </div>
+      <div class="serviceType">
+        <h1>0 → 1</h1>
+        <p class="title">Designing <br>Something New</p>
+        <p class="description">0-to-1 product design, from research and discovery to launch.</p>
+        <p class="description textJP">0から1のプロダクトデザイン。<br>ディスカバリーからローンチまで。</p>
+      </div>
+      <div class="serviceType">
+        <h1>1 → 2,3,4,5...</h1>
+        <p class="title">Improving <br>What Exists</p>
+        <p class="description">From refinement to evolution. "Different" is better than "better".</p>
+        <p class="description textJP">磨きから進化。"異なる" は "より良い" よりも価値がある。</p>
+      </div>
+    </div>      
+  </nav> <!-- END OF NAV -->
+
+  <div id="container">            
     <!-- LINKS -->
-    <div id="links" class="grid-1">
-      <div class="col grid-2">
-        <div class="linkWrapper">
-          <p>Email</p>
-          <a class="email" href="mailto:kosuke@newfiction.org">business@newfiction.org</a>
+    <div id="header">
+      <div class="grid-1">
+
+        <div class="label">
+          <h1>Product & Brand Design Studio</h1>
+        </div>   
+
+        <div class="logoSM">
+          <svg viewBox="0 0 160 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_337_18280)">
+            <path d="M17.3521 23.6067H14.2709L3.08119 7.1614V23.6051H0V1.5498H3.08119L14.2709 17.9935V1.5498H17.3521V23.6051V23.6067Z" fill="#D82B24"/>
+            <path d="M28.1591 21.1739C30.4612 21.1739 31.5979 20.2 32.278 18.9037L32.3754 18.7409H35.5923C35.6833 18.7409 35.5859 18.7728 35.554 18.9037C34.711 22.0823 31.8246 23.931 28.1591 23.931C23.2947 23.931 20.2773 20.4603 20.2773 15.401C20.2773 10.3418 23.1318 6.87109 28.1591 6.87109C33.1864 6.87109 36.0728 10.3418 36.0728 15.401V16.5042H23.5533C23.5533 19.7482 25.9544 21.1755 28.1591 21.1755V21.1739ZM28.1591 9.6266C25.0125 9.6266 23.5533 12.3837 23.5533 14.0696H32.6995C32.6995 12.058 31.3696 9.6266 28.1591 9.6266Z" fill="#D82B24"/>
+            <path d="M48.1177 10.5022L44.9711 23.6061H40.8841L36.96 7.19434H40.0731L42.9276 20.3956L46.1716 7.19434H50.0957L53.3398 20.3956L56.1943 7.19434H59.3074L55.3832 23.6061H51.2963L48.1177 10.5022Z" fill="#D82B24"/>
+            <path d="M82.3369 1.5498V4.30691H70.6603V10.9482H81.007V13.7053H70.6603V23.6051H67.5791V1.5498H82.3369Z" fill="#D82B24"/>
+            <path d="M103.381 12.5762C102.668 10.662 101.111 9.62429 98.9046 9.62429C95.8235 9.62429 93.9747 12.0238 93.9747 15.3971C93.9747 18.7705 95.8235 21.17 98.9046 21.17C101.111 21.17 102.668 20.1323 103.381 18.2181L103.435 18.0553H106.656L106.624 18.2181C105.715 21.8181 103.024 23.9271 98.9046 23.9271C93.8119 23.9271 90.8936 20.4564 90.8936 15.3971C90.8936 10.3379 93.8135 6.86719 98.9046 6.86719C103.024 6.86719 105.749 9.00806 106.624 12.5762L106.656 12.739H103.435L103.381 12.5778V12.5762Z" fill="#D82B24"/>
+            <path d="M107.741 7.19282H110.952V2.49121H114.033V7.19442H117.86V9.62744H114.033V18.515C114.033 20.2009 114.747 20.98 116.206 20.98C116.659 20.98 117.275 20.8826 117.601 20.7852L117.861 23.2821C117.31 23.4768 116.044 23.6061 115.202 23.6061C112.898 23.6061 110.953 22.3417 110.953 19.0323V9.62584H107.743V7.19282H107.741Z" fill="#D82B24"/>
+            <path d="M120.098 2.8794C120.098 1.80976 121.038 0.901367 122.173 0.901367C123.243 0.901367 124.151 1.80976 124.151 2.8794C124.151 4.01449 123.243 4.95481 122.173 4.95481C121.038 4.95481 120.098 4.01449 120.098 2.8794ZM120.617 23.6064V7.19306H123.698V23.6048H120.617V23.6064Z" fill="#D82B24"/>
+            <path d="M134.783 23.931C129.691 23.931 126.74 20.4603 126.74 15.401C126.74 10.3418 129.692 6.87109 134.783 6.87109C139.874 6.87109 142.826 10.3418 142.826 15.401C142.826 20.4603 139.842 23.931 134.783 23.931ZM134.783 9.6266C131.702 9.6266 129.821 12.0261 129.821 15.3994C129.821 18.7728 131.702 21.1723 134.783 21.1723C137.864 21.1723 139.745 18.7728 139.745 15.3994C139.745 12.0261 137.896 9.6266 134.783 9.6266Z" fill="#D82B24"/>
+            <path d="M85.094 7.19342H88.1752V23.6052H85.094V7.19342ZM86.6506 4.95676C87.7202 4.95676 88.6286 4.01644 88.6286 2.88135C88.6286 1.81171 87.7202 0.90332 86.6506 0.90332C85.5155 0.90332 84.5752 1.81171 84.5752 2.88135C84.5752 4.01644 85.5155 4.95676 86.6506 4.95676Z" fill="#D82B24"/>
+            <path d="M148.323 8.84912C148.971 7.87527 150.756 6.87109 152.929 6.87109C157.632 6.87109 160 10.3083 160 14.5262V23.6085H156.919V14.5262C156.919 12.0612 155.819 9.6282 152.608 9.6282C149.883 9.6282 148.326 11.9958 148.326 14.5262V23.6085H145.245V7.19358H147.97L148.328 8.84753H148.325L148.323 8.84912Z" fill="#D82B24"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_337_18280">
+            <rect width="160" height="23.0291" fill="white" transform="translate(0 0.901367)"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </div> <!-- END OF LOGO SM -->
+
+        <div class="menuWrapper">
+          <label for="menu" class="menu">
+            <h1>Info</h1>
+          </label>
+        </div> <!-- END OF MENUWRAPPER -->
+
+      </div> <!-- END OF GRID-1 -->
+
+      <div class="logo">   
+        <svg viewBox="0 0 160 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_337_18280)">
+          <path d="M17.3521 23.6067H14.2709L3.08119 7.1614V23.6051H0V1.5498H3.08119L14.2709 17.9935V1.5498H17.3521V23.6051V23.6067Z" fill="#D82B24"/>
+          <path d="M28.1591 21.1739C30.4612 21.1739 31.5979 20.2 32.278 18.9037L32.3754 18.7409H35.5923C35.6833 18.7409 35.5859 18.7728 35.554 18.9037C34.711 22.0823 31.8246 23.931 28.1591 23.931C23.2947 23.931 20.2773 20.4603 20.2773 15.401C20.2773 10.3418 23.1318 6.87109 28.1591 6.87109C33.1864 6.87109 36.0728 10.3418 36.0728 15.401V16.5042H23.5533C23.5533 19.7482 25.9544 21.1755 28.1591 21.1755V21.1739ZM28.1591 9.6266C25.0125 9.6266 23.5533 12.3837 23.5533 14.0696H32.6995C32.6995 12.058 31.3696 9.6266 28.1591 9.6266Z" fill="#D82B24"/>
+          <path d="M48.1177 10.5022L44.9711 23.6061H40.8841L36.96 7.19434H40.0731L42.9276 20.3956L46.1716 7.19434H50.0957L53.3398 20.3956L56.1943 7.19434H59.3074L55.3832 23.6061H51.2963L48.1177 10.5022Z" fill="#D82B24"/>
+          <path d="M82.3369 1.5498V4.30691H70.6603V10.9482H81.007V13.7053H70.6603V23.6051H67.5791V1.5498H82.3369Z" fill="#D82B24"/>
+          <path d="M103.381 12.5762C102.668 10.662 101.111 9.62429 98.9046 9.62429C95.8235 9.62429 93.9747 12.0238 93.9747 15.3971C93.9747 18.7705 95.8235 21.17 98.9046 21.17C101.111 21.17 102.668 20.1323 103.381 18.2181L103.435 18.0553H106.656L106.624 18.2181C105.715 21.8181 103.024 23.9271 98.9046 23.9271C93.8119 23.9271 90.8936 20.4564 90.8936 15.3971C90.8936 10.3379 93.8135 6.86719 98.9046 6.86719C103.024 6.86719 105.749 9.00806 106.624 12.5762L106.656 12.739H103.435L103.381 12.5778V12.5762Z" fill="#D82B24"/>
+          <path d="M107.741 7.19282H110.952V2.49121H114.033V7.19442H117.86V9.62744H114.033V18.515C114.033 20.2009 114.747 20.98 116.206 20.98C116.659 20.98 117.275 20.8826 117.601 20.7852L117.861 23.2821C117.31 23.4768 116.044 23.6061 115.202 23.6061C112.898 23.6061 110.953 22.3417 110.953 19.0323V9.62584H107.743V7.19282H107.741Z" fill="#D82B24"/>
+          <path d="M120.098 2.8794C120.098 1.80976 121.038 0.901367 122.173 0.901367C123.243 0.901367 124.151 1.80976 124.151 2.8794C124.151 4.01449 123.243 4.95481 122.173 4.95481C121.038 4.95481 120.098 4.01449 120.098 2.8794ZM120.617 23.6064V7.19306H123.698V23.6048H120.617V23.6064Z" fill="#D82B24"/>
+          <path d="M134.783 23.931C129.691 23.931 126.74 20.4603 126.74 15.401C126.74 10.3418 129.692 6.87109 134.783 6.87109C139.874 6.87109 142.826 10.3418 142.826 15.401C142.826 20.4603 139.842 23.931 134.783 23.931ZM134.783 9.6266C131.702 9.6266 129.821 12.0261 129.821 15.3994C129.821 18.7728 131.702 21.1723 134.783 21.1723C137.864 21.1723 139.745 18.7728 139.745 15.3994C139.745 12.0261 137.896 9.6266 134.783 9.6266Z" fill="#D82B24"/>
+          <path d="M85.094 7.19342H88.1752V23.6052H85.094V7.19342ZM86.6506 4.95676C87.7202 4.95676 88.6286 4.01644 88.6286 2.88135C88.6286 1.81171 87.7202 0.90332 86.6506 0.90332C85.5155 0.90332 84.5752 1.81171 84.5752 2.88135C84.5752 4.01644 85.5155 4.95676 86.6506 4.95676Z" fill="#D82B24"/>
+          <path d="M148.323 8.84912C148.971 7.87527 150.756 6.87109 152.929 6.87109C157.632 6.87109 160 10.3083 160 14.5262V23.6085H156.919V14.5262C156.919 12.0612 155.819 9.6282 152.608 9.6282C149.883 9.6282 148.326 11.9958 148.326 14.5262V23.6085H145.245V7.19358H147.97L148.328 8.84753H148.325L148.323 8.84912Z" fill="#D82B24"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_337_18280">
+          <rect width="160" height="23.0291" fill="white" transform="translate(0 0.901367)"/>
+          </clipPath>
+          </defs>
+        </svg>          
+      </div> <!-- END OF LOGO -->
+
+  </div> <!-- END OF HEADER -->
+
+    <!-- WORK -->
+    <div id="content" class="grid-2">    
+      <!-- OUR WORK -->
+      <div id="work">
+        <!-- onclick="plusDivs(1) -->
+        <div class="projectWrapper">
+          <div class="projectThumbnail macro" onclick='galleryMacro.next("imgMacro")'>
+            <img id='imgMacro' src="img/projects/macro/macro-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Macro</h2>
+              <h3 class="projectTag">B2B · Product/Brand</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>                
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  Macro is a process creation and management tool primarily for Operations teams. 
+                  We led design to evolve Macro from conception to launch, collaborating closely 
+                  with the co-founders and engineers. 
+                  <br>
+                  Outputs include: product strategy, UX/UI design, visual design, web design 
+                  and development, design system, icon design, logo design, and marketing materials.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>          
         </div>
-        <div class="linkWrapper">
-         <p>Connect on</p>
-         <a class="linkedin" href="https://www.linkedin.com/company/newfiction-org/" target="_blank">LinkedIn</a>
-       </div>
-      </div>
-      <div class="col"><span></span></div>
-    </div>  <!-- END OF LINKS -->
+
+        <div class="projectWrapper">
+          <div class="projectThumbnail remotion" onclick='galleryRemotion.next("imgRemotion")'>
+            <img id='imgRemotion' src="img/projects/remotion/remotion-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Remotion</h2>
+              <h3 class="projectTag">B2B · Product</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>                
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  Remotion is a virtual office that facilitates casual conversations through 
+                  coworking rooms and shared music. It was a macOS application that allowed 
+                  users to pin their teammates to the dock, providing background awareness 
+                  of each other's activities.                  
+                  <br>
+                  We led product design in the Core Experience team, tasked with implementing 
+                  focused enhancements to the product's core experience. Working alongside 
+                  five engineers, our collective aim was to boost user retention and encourage 
+                  word-of-mouth promotion of Remotion.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>          
+        </div>
+        
+        <div class="projectWrapper">
+          <div class="projectThumbnail trustworthy" onclick='galleryTrustworthy.next("imgTrustworthy")'>
+            <img id='imgTrustworthy' src="img/projects/trustworthy/trustworthy-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Trustworthy</h2>
+              <h3 class="projectTag">D2C · Product</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>                
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  Trustworthy serves as the Family Operating System® designed 
+                  to keep families organized and prepared, all in one place.                
+                  <br>
+                  Our responsibilities included enhancing all aspects of the 
+                  product, including the web app, iOS app, and the design system. 
+                  Trustworthy posed challenges in system-level problem-solving, 
+                  given that many features and components were distributed 
+                  across various platforms.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <div class="projectWrapper">
+          <div class="projectThumbnail otter" onclick='galleryOtter.next("imgOtter")'>
+            <img id='imgOtter' src="img/projects/otter/otter-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Otter.ai</h2>
+              <h3 class="projectTag">B2B · Product/Brand</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>                
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  Otter.ai specialize in voice transcription services, leveraging 
+                  advanced AI technology to convert live speech into text in real-time. 
+                  We collaborated with Otter.ai's product team, bringing a fresh 
+                  perspective to their design challenges.
+                  <br>
+                  In addition to product-related problems, we recognized the need for 
+                  improvement in their icon library. This led to a complete redesign of 
+                  their icon library, which aimed to enhance the visual coherence and 
+                  user experience of Otter.ai's UI.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>               
+        </div>
        
-    <!-- MAIN CONTENT -->
-    <div id="content">      
-      <div class="logo">                        
-        <svg viewBox="0 0 1328 223" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1220.64 71.3647V102.268C1238.16 82.8339 1253.13 71.3647 1271.29 71.3647C1291.68 71.3647 1305.06 85.3826 1305.06 116.923V192.11C1305.06 208.676 1309.52 213.137 1328 213.455V218.234H1260.78V213.455C1278.3 213.137 1283.4 209.632 1283.4 192.11V122.658C1283.4 96.5332 1274.48 87.6128 1260.14 87.6128C1246.12 87.6128 1231.15 99.7191 1220.64 110.551V192.11C1220.64 209.632 1224.78 213.455 1243.26 213.455V218.234H1176.35V213.455C1193.87 213.455 1198.97 209.314 1198.97 192.11V111.188C1198.97 94.3031 1195.47 90.1615 1186.86 90.1615C1183.36 90.1615 1178.9 91.4358 1175.71 92.7102L1173.8 88.5685L1215.86 71.3647H1220.64Z" fill="#D82B24"/>
-          <path d="M1105.9 71.3647C1140.94 71.3647 1172.8 102.586 1172.8 143.684C1172.8 177.773 1153.69 222.694 1104.94 222.694C1069.58 222.694 1038.99 188.287 1038.99 148.463C1038.99 105.772 1068.3 71.3647 1105.9 71.3647ZM1102.71 80.6038C1081.37 80.6038 1063.53 100.675 1063.53 135.401C1063.53 180.641 1082.64 213.455 1111.31 213.455C1139.99 213.455 1148.27 181.915 1148.27 157.384C1148.27 105.454 1127.56 80.6038 1102.71 80.6038Z" fill="#D82B24"/>
-          <path d="M1019.07 71.3638V192.109C1019.07 208.994 1024.48 213.136 1041.69 213.454V218.233H974.783V213.454C992.305 213.136 997.403 208.994 997.403 192.109V108.639C997.403 93.3465 994.217 90.1606 986.252 90.1606C982.748 90.1606 977.013 91.7535 974.146 93.0279L972.553 88.5676L1013.65 71.3638H1019.07ZM991.668 14.6551C991.668 6.69037 998.996 0 1006.64 0C1014.61 0 1021.3 6.69037 1021.3 14.6551C1021.3 22.6198 1014.61 29.6288 1006.64 29.6288C998.677 29.6288 991.668 22.6198 991.668 14.6551Z" fill="#D82B24"/>
-          <path d="M930.05 75.8224H963.502V84.4243H930.05V178.408C930.05 198.479 934.192 204.851 945.024 204.851C952.351 204.851 959.36 199.116 962.546 189.877H967.644C962.228 207.718 950.44 220.143 934.829 220.143C918.262 220.143 908.386 210.267 908.386 186.054V84.4243H884.811V79.6455C907.43 71.9994 917.625 60.2116 925.271 32.1758H930.05V75.8224Z" fill="#D82B24"/>
-          <path d="M876.399 161.525L880.859 163.437C876.081 195.296 855.691 222.694 822.876 222.694C789.425 222.694 763.938 193.066 763.938 146.233C763.938 100.993 792.611 71.3647 829.567 71.3647C855.054 71.3647 876.399 87.2942 876.399 104.498C876.399 112.144 871.62 117.56 863.019 117.56C854.098 117.56 849.001 111.825 847.726 100.675C846.452 86.0198 838.487 80.6038 825.107 80.6038C799.619 80.6038 783.053 102.586 783.053 134.445C783.053 176.499 805.035 202.942 831.478 202.942C854.735 202.942 869.39 185.419 876.399 161.525Z" fill="#D82B24"/>
-          <path d="M740.509 71.3638V192.109C740.509 208.994 745.925 213.136 763.129 213.454V218.233H696.225V213.454C713.748 213.136 718.845 208.994 718.845 192.109V108.639C718.845 93.3465 715.659 90.1606 707.694 90.1606C704.19 90.1606 698.455 91.7535 695.588 93.0279L693.995 88.5676L735.093 71.3638H740.509ZM713.11 14.6551C713.11 6.69037 720.438 0 728.084 0C736.049 0 742.739 6.69037 742.739 14.6551C742.739 22.6198 736.049 29.6288 728.084 29.6288C720.119 29.6288 713.11 22.6198 713.11 14.6551Z" fill="#D82B24"/>
-          <path d="M592.326 17.2054V103.543H629.282C652.539 103.543 660.504 98.1269 660.822 74.2327H665.601V142.092H660.822C660.504 118.517 652.539 112.782 629.282 112.782H592.326V178.73C592.326 205.491 592.644 213.456 622.273 213.456V218.235H537.528V213.456C566.838 213.456 567.476 205.491 567.476 178.73V48.1085C567.476 21.6656 566.838 12.1079 537.528 12.1079V7.3291H690.132L692.362 54.1616H688.539C679.619 22.6214 669.105 17.2054 637.565 17.2054H592.326Z" fill="#D82B24"/>
-          <path d="M487.213 194.34L518.435 106.41C520.028 102.268 522.258 95.5777 522.258 90.7989C522.258 84.4271 520.028 79.9668 505.373 79.3297V75.8252H549.338V79.3297C537.232 80.2854 530.86 92.7104 527.993 101.312L484.346 222.695H482.435L446.753 124.888L403.106 222.695H401.832L357.548 106.728C348.946 84.1085 345.123 81.2412 331.742 79.3297V75.8252H385.584V79.3297C380.168 79.3297 370.291 81.8784 370.291 91.436C370.291 96.852 371.884 101.631 373.477 106.091L407.248 195.933L442.93 115.967L437.195 100.357C430.505 82.8342 424.451 79.3297 414.575 79.3297V75.8252H469.372V79.3297C464.275 79.3297 451.532 79.9668 451.532 91.7546C451.532 95.2591 452.806 100.038 454.08 103.542L487.213 194.34Z" fill="#D82B24"/>
-          <path d="M334.715 129.666H232.129C232.129 183.827 255.386 207.402 282.466 207.402C307.953 207.402 323.564 192.428 330.573 163.755L333.759 165.348C328.662 195.933 308.272 222.694 278.006 222.694C241.05 222.694 218.111 190.835 218.111 147.507C218.111 97.8076 243.598 71.3647 281.192 71.3647C312.414 71.3647 334.715 95.2589 334.715 129.666ZM232.448 122.339H313.051C314.007 95.5775 297.44 78.6923 274.82 78.6923C254.43 78.6923 234.041 96.2147 232.448 122.339Z" fill="#D82B24"/>
-          <path d="M50.6556 47.4713V181.278C50.6556 213.456 54.1601 213.774 80.6029 214.73V218.235H12.425V214.73C36.0005 213.774 42.3723 212.182 42.3723 181.278V36.9579C30.9031 22.6214 21.3454 10.8336 0 10.8336V7.3291H39.1864L188.923 192.11H189.56V44.9226C189.56 17.5239 184.781 11.4708 159.613 10.8336V7.3291H227.791V10.8336C203.578 11.7894 197.844 15.6124 197.844 44.9226V221.739H193.383L51.2928 47.4713H50.6556Z" fill="#D82B24"/>
-        </svg> 
-      </div>
-      <div class="intro">
-        <p class="textEN">A multicultural design studio partnering to envision and craft bold, new worlds.</p>
-        <p class="textJP">多文化的なデザインスタジオとして、パートナーと共に、大胆かつ新たな世界観を形作ります。</p>        
-      </div>          
-    </div>  <!-- END OF CONTENT -->
+        <div class="projectWrapper">
+          <div class="projectThumbnail touchpoint" onclick='galleryTouchpoint.next("imgTouchpoint")'>
+            <img id='imgTouchpoint' src="img/projects/touchpoint/touchpoint-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Touchpoint</h2>
+              <h3 class="projectTag">Nonprofit · Brand/Web</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>                
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  Touchpoint Interaction Design Conference is a part of Simon Fraser 
+                  University and the School of Interactive Art and Technology. Touchpoint 
+                  is ran annually with each year having its own visual identity for 
+                  their website.
+                  <br>
+                  We were commisioned to conceptualize the year's theme and build the 
+                  website for Touchpoint 2019. Outputs include brand concept, visual identity, 
+                  motion design, and web design/development.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>                   
+        </div>
+        
+        <div class="projectWrapper">
+          <div class="projectThumbnail series" onclick='gallerySeries.next("imgSeries")'>
+            <img id='imgSeries' src="img/projects/series/series-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Series</h2>
+              <h3 class="projectTag">D2C · Logo</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  Series' ambition was to push forward the notion of "Personal 
+                  Computers" to mean "Personalized Computers." The logo represents 
+                  the winding path our ideas take as we follow a train of thought, 
+                  through a form that blends fluidity and oneness.
+                  <br>
+                  The logomark features a series of serif 'S's arranged diagonally 
+                  within a sphere. This creates a dynamic movement and a distinctive 
+                  pattern, reminiscent of unique identifiers like DNA helices or 
+                  fingerprints.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>                    
+        </div>
+
+        <div class="projectWrapper">
+          <div class="projectThumbnail seven" onclick='gallerySeven.next("imgSeven")'>
+            <img id='imgSeven' src="img/projects/seven/seven-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Seven.me</h2>
+              <h3 class="projectTag">D2C · Product/Brand</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  Seven is a health-focused startup building a system of products 
+                  and services that make health mastery accessible to all through 
+                  behavioral health coaching.
+                  <br>
+                  We led design for Seven’s digital offerings by owning the end-to-end 
+                  experience of multiple projects while collaborating with cross-functional 
+                  stakeholders. 
+                  <br>
+                  Main responsibilities include revamping the client-facing mobile app, 
+                  improvements of their internal tool, and exploring visual concepts for 
+                  their physical onboarding toolkit.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div> 
+          </div>                   
+        </div>
+
+        <div class="projectWrapper">
+          <div class="projectThumbnail instaread" onclick='galleryInstaread.next("imgInstaread")'>
+            <img id='imgInstaread' src="img/projects/instaread/instaread-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Instaread</h2>
+              <h3 class="projectTag">D2C/B2B2C · Product/Brand</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  We supported Instaread to help solve user experience and interface problems, 
+                  as well as making visual design improvements throughout the platform. During 
+                  our contract, we worked on various parts of their iOS app, web app and website 
+                  as well as numerous marketing materials.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>                    
+        </div>
+
+        <div class="projectWrapper">
+          <div class="projectThumbnail bch" onclick='galleryBCH.next("imgBCH")'>
+            <img id='imgBCH' src="img/projects/bch/bch-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Breast Cancer Hawaii</h2>
+              <h3 class="projectTag">Nonprofit · Logo/Brand Guidelines</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  For a duration of 4 months, we provided design advisory for Breast Cancer Hawaii. 
+                  During this time, we designed logos for multiple programs and created brand guidelines 
+                  that reflect their concepts. 
+                  <br>
+                  This is one of the logos we designed for their program—Hearts for Ohana.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>                   
+        </div>              
       
-    <!-- FOOTER -->
-    <div id="footer" class="grid-1 foot">      
-      <div class="serviceWrapper">
-          <div class="service">
-            <h1>Product</h1>
+        <div class="projectWrapper">
+          <div class="projectThumbnail nikkei" onclick='galleryNikkei.next("imgNikkei")'>
+            <img id='imgNikkei' src="img/projects/nikkei/nikkei-01.png">
+          </div>
+          <div class="projectInfo">
+            <div class="grid-3">
+              <h2 class="clientName">Nikkei Centre</h2>
+              <h3 class="projectTag">Nonprofit · Logo</h3>
+            </div>
+            <div class="learnMore">
+              <div class="accordion">
+                <p>Learn more</p>
+              </div>
+              <div class="projectDescription grid-3">
+                <p>
+                  The inaugural edition of the Nikkei Farmers’ Market “産地直送” was held in 
+                  the Japanese Garden at the Nikkei National Museum and Cultural Centre in 
+                  Burnaby, British Columbia.
+                  <br>
+                  The organization held a logo design contest as they kick off the second 
+                  year of their farmers' market. This was our proposal for their new logo, 
+                  to symbolize the local community's togetherness and cultural celebration.
+                  <br>
+                  Unfortunately, the organization decided not to update their logo due to 
+                  internal reasons.
+                </p>
+                <div><span></span></div>
+              </div>
+            </div>
+          </div>                    
+        </div>     
+
+      </div> <!-- END OF WORK -->
+
+      <div id="about">
+        <div class="aboutSection">
+          <h4>About</h4>
+          <p>
+            New Fiction is a multicultural design studio by Kosuke Futsukaichi 
+            and Maria Shimizu, specializing in digital product and brand design. 
+            We're based in Tokyo, and work globally.
+            <br>
+            With our multicultural background and experience working with companies 
+            in various fields at large and small scale, we design apps, websites, 
+            design systems, visual identities, and print materials.
+          </p>
+        </div>
+
+        <div class="aboutSection">                    
+          <h4>Get in touch</h4>
+          <p>
+            A new project, an idea, or just a conversation. Please reach out via 
+            email: <a href="mailto:kosuke@newfiction.org">business@newfiction.org</a> 
+            or connect with us on <a href="https://www.linkedin.com/company/newfiction-org/" target="_blank">LinkedIn</a>.
+          </p>  
+        </div>
+
+        <div class="aboutSection grid-3">
+          <div class="serviceColumn">
+            <p>Product</p>
             <li>Product Strategy</li>
             <li>Information Architecture</li>
             <li>UX/UI Design</li>  
@@ -96,8 +483,8 @@
             <li>Icon Design</li>
             <li>Prototyping</li>                    
           </div>
-          <div class="service">
-            <h1>Brand</h1>
+          <div class="serviceColumn">
+            <p>Brand</p>
             <li>Brand Strategy</li>
             <li>Art Direction</li>
             <li>Graphic Design</li>
@@ -105,60 +492,106 @@
             <li>Package Design</li>                          
             <li>Web Design</li>                   
           </div>
-      </div>  
-      <div class="col">
-        <p>©New Fiction 株式会社ニューフィクション</p>      
+        </div>
+        
+        <div class="aboutSection JP">
+          <h4>会社紹介</h4>
+          <p>
+            ニュー・フィクションは、デジタルプロダクトとブランドデザインを専門とする、
+            二日一宏祐と清水万里合によるデザインスタジオです。
+            <br>
+            多文化的な背景を持ち、大企業からスタートアップまでさまざまな分野の企業と
+            協働してきた経験を活かし、アプリ、ウェブサイト、デザインシステム、
+            ビジュアルアイデンティティ、印刷物などを手がけています。
+            <br>
+            新しいプロジェクト、アイデア、あるいは気軽に会話でも。いつでもご連絡ください。
+          </p>          
+        </div>
+      </div> <!-- END OF ABOUT -->    
+
+    </div> <!-- END OF CONTENT -->    
+
+    <!-- FOOTER -->
+    <div id="footer" class="grid-2">      
+      <div class="col credit">
+        <p>Based in Tokyo, working globally.</p>
+      </div> 
+      <div class="col copyright">
+        <p>©New Fiction <span class="JP">株式会社ニューフィクション</span></p>      
       </div> 
     </div>  <!-- END OF FOOTER -->
+
   </div>  <!-- END OF CONTAINER -->
    
 </body>
 
-<!-- HOVER EFFECT -->
-<script> 
-  $(function() {
-    $('.linkWrapper a.email').hover(function() {
-      $('body').css('background', 'var(--red)');
-      $('svg path').css('fill', 'var(--white)');
-      $('p').css('color', 'var(--redLight)');
-      $('a').css('color', 'var(--white)');
-      $('.intro .textEN').css('color', 'var(--white)');
-      $('#footer').css('background-color', 'var(--white)');
-      $('#footer .service h1').css('color', 'var(--red)');
-      $('#footer li, #footer p').css('color', 'var(--redMid)');
-    }, function() {
-      // on mouseout, reset the background colour
-      $('body').css('background', '');
-      $('svg path').css('fill', '');
-      $('p').css('color', '');
-      $('a').css('color', '');
-      $('.intro .textEN').css('color', '');
-      $('#footer').css('background-color', '');
-      $('#footer .service h1').css('color', '');
-      $('#footer li, #footer p').css('color', '');
-    });
 
-    $('.linkWrapper a.linkedin').hover(function() {
-      $('body').css('background', 'var(--red)');
-      $('svg path').css('fill', 'var(--white)');
-      $('p').css('color', 'var(--redLight)');
-      $('a').css('color', 'var(--white)');
-      $('.intro .textEN').css('color', 'var(--white)');
-      $('#footer').css('background-color', 'var(--white)');
-      $('#footer .service h1').css('color', 'var(--red)');
-      $('#footer li, #footer p').css('color', 'var(--redMid)');
-    }, function() {
-      // on mouseout, reset the background colour
-      $('body').css('background', '');
-      $('svg path').css('fill', '');
-      $('p').css('color', '');
-      $('a').css('color', '');
-      $('.intro .textEN').css('color', '');
-      $('#footer').css('background-color', '');
-      $('#footer .service h1').css('color', '');
-      $('#footer li, #footer p').css('color', '');
-    });
+<script> 
+/**************************************************
+    ACCORDION
+**************************************************/
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
   });
+}
+
+
+
+
+// HOVER INVERT EFFECT
+  // $(function() {
+  //   $('.linkWrapper a.email').hover(function() {
+  //     $('body').css('background', 'var(--red)');
+  //     $('svg path').css('fill', 'var(--white)');
+  //     $('p').css('color', 'var(--redLight)');
+  //     $('a').css('color', 'var(--white)');
+  //     $('.intro .textEN').css('color', 'var(--white)');
+  //     $('#footer').css('background-color', 'var(--white)');
+  //     $('#footer .service h1').css('color', 'var(--red)');
+  //     $('#footer li, #footer p').css('color', 'var(--redMid)');
+  //   }, function() {
+  //     // on mouseout, reset the background colour
+  //     $('body').css('background', '');
+  //     $('svg path').css('fill', '');
+  //     $('p').css('color', '');
+  //     $('a').css('color', '');
+  //     $('.intro .textEN').css('color', '');
+  //     $('#footer').css('background-color', '');
+  //     $('#footer .service h1').css('color', '');
+  //     $('#footer li, #footer p').css('color', '');
+  //   });
+
+  //   $('.linkWrapper a.linkedin').hover(function() {
+  //     $('body').css('background', 'var(--red)');
+  //     $('svg path').css('fill', 'var(--white)');
+  //     $('p').css('color', 'var(--redLight)');
+  //     $('a').css('color', 'var(--white)');
+  //     $('.intro .textEN').css('color', 'var(--white)');
+  //     $('#footer').css('background-color', 'var(--white)');
+  //     $('#footer .service h1').css('color', 'var(--red)');
+  //     $('#footer li, #footer p').css('color', 'var(--redMid)');
+  //   }, function() {
+  //     // on mouseout, reset the background colour
+  //     $('body').css('background', '');
+  //     $('svg path').css('fill', '');
+  //     $('p').css('color', '');
+  //     $('a').css('color', '');
+  //     $('.intro .textEN').css('color', '');
+  //     $('#footer').css('background-color', '');
+  //     $('#footer .service h1').css('color', '');
+  //     $('#footer li, #footer p').css('color', '');
+  //   });
+  // });
 </script>
 
 </html>

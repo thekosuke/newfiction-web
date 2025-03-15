@@ -111,7 +111,7 @@
 	#nav h1, #nav p, #nav p a, #nav .service p.description.textJP { 
 		font-size: .9rem;
 		line-height: 1.4rem;
-		letter-spacing: .05rem;		
+		letter-spacing: .03rem;		
 	}
 
 	#nav .intro p, #nav .service p { 
@@ -192,7 +192,6 @@
 
 	#nav h1, #nav p, #nav p a {
 		font-size: .8rem;
-		letter-spacing: .05rem;
 	}
 
 	#nav .intro p {
@@ -233,7 +232,7 @@
 	#about { 
 		display: block; 
 		top: 6.1rem;
-		margin: 0 1rem 4rem 0;		
+		margin: 3rem 1rem 4rem 0;		
 	}
 
 	.aboutSection { margin-bottom: 1.5rem; }

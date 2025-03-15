@@ -170,14 +170,14 @@ h1, .aboutSection p a, .aboutSection.JP p a {
 /*//////////////////////////////////////////////////////
   ABOUT
 //////////////////////////////////////////////////////*/
-#content { overflow: visible; }
-#about {
+/* #content { overflow: visible; } */
+/* #about {
   position: sticky;
   position: -webkit-sticky;  
   z-index: 0;
   height: auto;
   align-self: start;
-}
+} */
 
 /*//////////////////////////////////////////////////////
   MENU
